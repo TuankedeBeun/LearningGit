@@ -4,4 +4,6 @@ Write-Host "Hello World"
 $message = Get-Age
 Write-Host $message
 
+$message | Out-File ".\message.txt"
+
 Write-Host "Program done"
