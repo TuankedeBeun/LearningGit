@@ -4,4 +4,4 @@ Write-Host "Hello World"
 $message = Get-Age
 Write-Host $message
 
-Write-Host "Done"
+Write-Host "Program done"
