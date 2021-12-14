@@ -1,8 +1,7 @@
 Import-Module .\InterestingModule.psm1
 
 Write-Host "Hello World"
-
-# do function
+Write-Host ("Today it is {0}" -f (Get-Date).ToString())
 $message = Get-Age
 Write-Host $message
 
