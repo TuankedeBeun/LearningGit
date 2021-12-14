@@ -9,7 +9,12 @@ Function Get-Age {
         Write-Host "Get on, young lad!"
     }
 
-    return "Your name is $name and you are $age years old."
+    if($name -eq "Tuanke") {
+        $message = "Hello $age-year old God!"
+    } else {
+        $message = "Your name is $name and you are $age years old."
+    }
+    return $message
 
     <#
         .SYNOPSIS
