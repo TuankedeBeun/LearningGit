@@ -10,4 +10,9 @@ Function Get-Age {
     }
 
     return "Your name is $name and you are $age years old."
+
+    <#
+        .SYNOPSIS
+        Super interesting function thta checks your age and returns an answer based on a complex algorithm
+    #>
 }
