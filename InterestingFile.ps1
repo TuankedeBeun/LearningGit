@@ -9,5 +9,6 @@ Write-Host $message
 $message = "MESSAGE on {0} `{1}" -f (Get-Date |Out-String), $message
 # store message
 $message | Out-File ".\statement.txt"
+Write-Host "Written message to .\statement.txt"
 
 Write-Host "Program done"
