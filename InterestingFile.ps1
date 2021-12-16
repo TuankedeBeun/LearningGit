@@ -2,14 +2,13 @@ Import-Module .\InterestingModule.psm1
 
 Write-Host "Hello World"
 Write-Host ("Today it is {0}" -f (Get-Date).ToString())
+
 Write-Host "-----------------------------------"
-$message = Get-Age
-Write-Host $message
+Get-Age
 
-# add header
-$message = "MESSAGE on {0} `{1}" -f (Get-Date |Out-String), $message
-# store message
-$message | Out-File ".\statement.txt"
-Write-Host "Written message to .\statement.txt"
+Write-Host "-----------------------------------"
+$maxIterations = Read-Host "Maximum number? "
+Show-IterateNumbers($maxIterations)
 
+Write-Host "-----------------------------------"
 Write-Host "Program done"
