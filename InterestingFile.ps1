@@ -13,7 +13,7 @@ Show-IterateNumbers($maxIterations)
 
 # print colors
 Write-Host "-----------------------------------"
-Show-Colorz
+Show-Colors
 
 Write-Host "-----------------------------------"
 Write-Host "Program done"

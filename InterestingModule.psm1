@@ -30,7 +30,7 @@ Function Get-Age {
     #>
 }
 
-Function Show-Colorz {
+Function Show-Colors {
 
     # load colors
     Write-Host 'Importing colors'
@@ -44,6 +44,8 @@ Function Show-Colorz {
         .SYNOPSIS
         Prints out all colors from a csv file
     #>
+}
+
 Function Show-IterateNumbers {
     param([int]$maxInt)
 
