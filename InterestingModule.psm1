@@ -31,4 +31,9 @@ Function Show-Colorz {
     foreach($color in $colorObject){
         Write-Host ("{0} - {1}" -f $color.index,$color.color)
     }
+
+    <#
+        .SYNOPSIS
+        Prints out all colors from a csv file
+    #>
 }
