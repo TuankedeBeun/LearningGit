@@ -12,4 +12,7 @@ $message = "MESSAGE on {0} `{1}" -f (Get-Date |Out-String), $message
 $message | Out-File ".\statement.txt"
 Write-Host "Written message to .\statement.txt"
 
+# print colors
+Show-Colorz
+
 Write-Host "Program done"
