@@ -47,7 +47,7 @@ Function Show-Colors {
 }
 
 Function Show-IterateNumbers {
-    param([int]$maxInt)
+    param([int]$maxInt, [int]$interval)
 
     for($it=0; $it -lt $maxInt; $it++){
         Write-Host "number $it"
