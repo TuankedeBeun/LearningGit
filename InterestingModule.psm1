@@ -52,4 +52,8 @@ Function Show-IterateNumbers {
     for($it=0; $it -lt $maxInt; $it++){
         Write-Host "number $it"
     }
+    <#
+        .SYNOPSIS
+        Print all numbers until a given maximum
+    #>
 }
