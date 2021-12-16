@@ -9,11 +9,19 @@ Function Get-Age {
         Write-Host "Get on, young lad!"
     }
 
+    # check for godly presence
     if($name -eq "Tuanke") {
         $message = "Hello $age-year old God!"
     } else {
         $message = "Your name is $name and you are $age years old."
     }
+    
+    # add header
+    $messageToFile = "MESSAGE on {0} `{1}" -f (Get-Date |Out-String), $message
+    # store message
+    $messageToFile | Out-File ".\statement.txt"
+    Write-Verbose "Written message to .\statement.txt"
+
     return $message
 
     <#
@@ -36,4 +44,10 @@ Function Show-Colorz {
         .SYNOPSIS
         Prints out all colors from a csv file
     #>
+Function Show-IterateNumbers {
+    param([int]$maxInt)
+
+    for($it=0; $it -lt $maxInt; $it++){
+        Write-Host "number $it"
+    }
 }
