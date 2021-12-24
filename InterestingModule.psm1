@@ -34,7 +34,7 @@ Function Show-Colors {
 
     # load colors
     Write-Host 'Importing colors'
-    $colorObject = (Import-Csv -Path '.\colors.csv' -Delimiter ',' -Header index,color)
+    $colorObject = (Import-Csv -Path '.\data\colors.csv' -Delimiter ',' -Header index,color)
 
     foreach($color in $colorObject){
         Write-Host ("{0} - {1}" -f $color.index,$color.color)
